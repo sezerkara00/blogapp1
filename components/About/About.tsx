@@ -6,7 +6,7 @@ import TabButton from './TabButton';
 const TAB_DATA = [
     {
       title: "Skills",
-      id: "skills",
+      id: "skills" as const,
       content: (
         <ul className="list-disc pl-2">
           <li>Node.js</li>
@@ -20,7 +20,7 @@ const TAB_DATA = [
     },
     {
       title: "Education",
-      id: "education",
+      id: "education" as const,
       content: (
         <ul className="list-disc pl-2">
           <li>Ataturk University</li>
@@ -29,7 +29,7 @@ const TAB_DATA = [
     },
     {
       title: "Certifications",
-      id: "certifications",
+      id: "certifications" as const,
       content: (
         <ul className="list-disc pl-2">
           <li>AWS Cloud Practitioner</li>
@@ -40,11 +40,13 @@ const TAB_DATA = [
     },
 ];
 
-const About = () => {
-    const [tab, setTab] = useState("skills");
+type TabId = "skills" | "education" | "certifications";
+
+const About: React.FC = () => {
+    const [tab, setTab] = useState<TabId>("skills");
     const [isPending, startTransition] = useTransition();
 
-    const handleTabChange = (id) => {
+    const handleTabChange = (id: TabId) => {
       startTransition(() => {
         setTab(id);
       });
