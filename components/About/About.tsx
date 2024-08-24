@@ -65,19 +65,19 @@ const About: React.FC = () => {
 
                 <div className='flex flex-row justify-start mt-8'>
                     <TabButton
-                        selectTab={() => handleTabChange("skills")}
+                        selecTab={() => handleTabChange("skills")}
                         active={tab === "skills"}  
                     >
                         Skills
                     </TabButton>
                     <TabButton
-                        selectTab={() => handleTabChange("education")}
+                        selecTab={() => handleTabChange("education")}
                         active={tab === "education"}  
                     >
                         Education
                     </TabButton>
                     <TabButton
-                        selectTab={() => handleTabChange("certifications")}
+                        selecTab={() => handleTabChange("certifications")}
                         active={tab === "certifications"}  
                     >
                         Certifications
