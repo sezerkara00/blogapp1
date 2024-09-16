@@ -45,12 +45,12 @@ const Hero = () => {
                             className='px-6 inline-block py-3 w-full mr-4 md:w-fit rounded-full bg-gradient-to-br from-mycolor-200 to-mycolor-100 text-white text-center'>
                             Hire
                         </Link>
-                        <Link href="/"
+                        <Link href="/sezer-kara.pdf" target="_blank" rel="noopener noreferrer"
                             className='px-1 inline-block py-1 w-full md:w-fit rounded-full bg-gradient-to-br from-mycolor-200 to-mycolor-100 text-mycolor-400 text-center mt-3'>
-                            <span className='block bg-mycolor-700 rounded-full px-5 py-2 '>
+                            <span className='block bg-mycolor-700 rounded-full px-5 py-2'>
                                 Download CV
                             </span>
-                        </Link>
+                    </Link>
                     </div>
                 </motion.div>
                 <motion.div
