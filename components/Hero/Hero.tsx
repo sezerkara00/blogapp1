@@ -18,7 +18,7 @@ const Hero = () => {
                 >
                     <h1 className='text-white mb-4 text-4xl md:text-5xl lg:text-7xl font-semibold font-poppins'>
                         <span className='text-transparent text-bold bg-clip-text bg-gradient-to-r from-mycolor-200 to-mycolor-100'>
-                            Hello I'm
+                            Hello I&apos;m
                         </span>
                         <div className='h-2'></div>
                         <TypeAnimation
